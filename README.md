@@ -33,7 +33,7 @@ GPT-PyClient is a Python client for querying GPT models using OpenAI's API or Az
 
 1. Create a `.env` file in the root directory of the project and add the appropriate environment variables based on your use case.
 
-    ### For ChatGPT:
+    ### For OpenAI ChatGPT:
     
         ```env
         ENGINE_TYPE=chatgpt
@@ -44,7 +44,7 @@ GPT-PyClient is a Python client for querying GPT models using OpenAI's API or Az
         TEMPERATURE=0.7
         ```
     
-    ### For Azure GPT:
+    ### For Azure OpenAI:
     
         ```env
         ENGINE_TYPE=azure
