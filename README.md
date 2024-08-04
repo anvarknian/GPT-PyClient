@@ -1,6 +1,6 @@
 # GPT-PyClient
 
-GPT-PyClient is a Python client for querying GPT models using OpenAI's API. This client is configured using environment variables for ease of setup and security.
+GPT-PyClient is a Python client for querying GPT models using OpenAI's API or Azure's OpenAI Service. This client is configured using environment variables for ease of setup and security.
 
 ## Features
 
@@ -29,9 +29,20 @@ GPT-PyClient is a Python client for querying GPT models using OpenAI's API. This
     pip install -r requirements.txt
     ```
 
-## Setup
+1. Create a `.env` file in the root directory of the project and add the appropriate environment variables based on your use case.
 
-1. Create a `.env` file in the root directory of the project and add the following environment variables:
+### For ChatGPT:
+
+    ```env
+    ENGINE_TYPE=chatgpt
+    MODEL_NAME=gpt-3.5-turbo-1106
+    API_KEY=your_openai_api_key
+    SYSTEM_PROMPT='you are a very smart ai copilot, your name is LLM-PyClient'
+    MAX_TOKENS=300
+    TEMPERATURE=0.7
+    ```
+
+### For Azure GPT:
 
     ```env
     ENGINE_TYPE=azure
@@ -45,12 +56,11 @@ GPT-PyClient is a Python client for querying GPT models using OpenAI's API. This
     ```
 
 2. Replace the placeholder values with your actual configuration:
-
     - `ENGINE_TYPE`: The type of engine you are using (`chatgpt` or `azure`).
-    - `MODEL_NAME`: The model name (e.g., `gpt-3.5-turbo-1106` or `mydeployment`).
-    - `ENDPOINT`: The endpoint URL for the API (e.g., `https://mydeployment.openai.azure.com/`)
+    - `MODEL_NAME`: The model name (e.g., `gpt-3.5-turbo-1106` for ChatGPT, `mydeployment` for Azure GPT).
+    - `ENDPOINT`: The endpoint URL for Azure GPT (not required for ChatGPT).
     - `API_KEY`: Your OpenAI API key.
-    - `API_VERSION`: The API version (eg., `2024-05-01-preview` ).
+    - `API_VERSION`: The API version for Azure GPT (not required for ChatGPT).
     - `SYSTEM_PROMPT`: The system prompt you want to use.
     - `MAX_TOKENS`: The maximum number of tokens to generate.
     - `TEMPERATURE`: The temperature setting for the model's responses.
