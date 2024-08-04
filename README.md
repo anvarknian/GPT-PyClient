@@ -19,8 +19,8 @@ GPT-PyClient is a Python client for querying GPT models using OpenAI's API or Az
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/gpt-pyclient.git
-    cd gpt-pyclient
+    git clone https://github.com/anvarknian/GPT-PyClient.git
+    cd GPT-PyClient
     ```
 
 2. Install the required Python packages:
