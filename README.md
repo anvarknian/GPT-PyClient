@@ -59,10 +59,10 @@ GPT-PyClient is a Python client for querying GPT models using OpenAI's API or Az
 
 2. Replace the placeholder values with your actual configuration:
     - `ENGINE_TYPE`: The type of engine you are using (`chatgpt` or `azure`).
-    - `MODEL_NAME`: The model name (e.g., `gpt-3.5-turbo-1106` for ChatGPT, `mydeployment` for Azure GPT).
-    - `ENDPOINT`: The endpoint URL for Azure GPT (not required for ChatGPT).
+    - `MODEL_NAME`: The model name (e.g., `gpt-3.5-turbo-1106` for ChatGPT, `mydeployment` for Azure OpenAI).
+    - `ENDPOINT`: The endpoint URL for Azure OpenAI (not required for ChatGPT).
     - `API_KEY`: Your OpenAI API key.
-    - `API_VERSION`: The API version for Azure GPT (not required for ChatGPT).
+    - `API_VERSION`: The API version for Azure OpenAI (not required for ChatGPT).
     - `SYSTEM_PROMPT`: The system prompt you want to use.
     - `MAX_TOKENS`: The maximum number of tokens to generate.
     - `TEMPERATURE`: The temperature setting for the model's responses.
