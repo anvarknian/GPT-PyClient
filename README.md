@@ -35,7 +35,7 @@ GPT-PyClient is a Python client for querying GPT models using OpenAI's API or Az
 
     ### For OpenAI ChatGPT:
     
-        ```env
+        ```
         ENGINE_TYPE=chatgpt
         MODEL_NAME=gpt-3.5-turbo-1106
         API_KEY=your_openai_api_key
@@ -46,7 +46,7 @@ GPT-PyClient is a Python client for querying GPT models using OpenAI's API or Az
     
     ### For Azure OpenAI:
     
-        ```env
+        ```
         ENGINE_TYPE=azure
         MODEL_NAME=mydeployment
         ENDPOINT=https://mydeployment.openai.azure.com/
