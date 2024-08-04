@@ -24,7 +24,7 @@ def setup_client():
           f'Model Name: {model_name}\n '          
           f'System prompt: {system_prompt}\n '
           f'Temperature: {temperature}\n '
-          f'Max tokens: {max_tokens}')
+          f'Max tokens: {max_tokens}\n')
     if engine_type.lower() == 'chatgpt':
         client = OpenAI(api_key=api_key)
     elif engine_type.lower() == 'azure':
